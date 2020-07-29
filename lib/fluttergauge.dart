@@ -89,7 +89,7 @@ class _FlutterGaugeMainState extends State<FlutterGaugeMain>  with TickerProvide
 
     percentageAnimationController = new AnimationController(
         vsync: this,
-        duration: new Duration(milliseconds: 0)
+        duration: new Duration(milliseconds: 1)
     )
       ..addListener((){
         setState(() {
@@ -104,7 +104,7 @@ class _FlutterGaugeMainState extends State<FlutterGaugeMain>  with TickerProvide
   reloadData(double value){
     print(value);
     newVal = value;
-    percentageAnimationController.forward(from: 0.0);
+    percentageAnimationController.forward(from: 1.0);
   }
 
 
