@@ -104,7 +104,7 @@ class _FlutterGaugeMainState extends State<FlutterGaugeMain>  with TickerProvide
   reloadData(double value){
     print(value);
     newVal = value;
-    percentageAnimationController.forward(from: 1.0);
+    percentageAnimationController.forward(from: value);
   }
 
 
